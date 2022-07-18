@@ -1,0 +1,34 @@
+{
+  "name": "littlehash",
+  "version": "1.0.0",
+  "description": "Generate a unique hash based on a long string",
+  "author": "JuanM04 <me@juanm04.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JuanM04/littlehash.git"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "pnpm run build"
+  },
+  "keywords": [
+    "hash",
+    "shorthash",
+    "littlehash"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^6.1.3",
+    "typescript": "^4.7.4"
+  }
+}
